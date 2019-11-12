@@ -33,6 +33,9 @@ gem 'webpacker', '~> 4.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Use devise as the authentication gem.
+gem 'devise'
+# include Devise Security Extension gem after development to enforce stronger pw
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
