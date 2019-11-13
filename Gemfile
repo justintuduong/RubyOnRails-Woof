@@ -14,10 +14,13 @@ gem 'sqlite3', '~> 1.4'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease . Read more: https://github.com/rails/jbuilder
@@ -30,15 +33,27 @@ gem 'webpacker', '~> 4.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Local and cloud file storage framework.
+# gem 'activestorage', '~> 6.0.0'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-# Use devise as the authentication gem.
-gem 'devise'
+# Flexible authentication solution for Rails with Warden
 # include Devise Security Extension gem after development to enforce stronger pw
+gem 'devise'
 
 # Organize data tables in rail console
 gem 'hirb'
+
+# Simple Rails app configuration
+gem 'figaro'
+
+# AWS SDK for Ruby - Amazon S3
+gem 'aws-sdk-s3', require: false
+
+# Font-Awesome SASS
+gem 'font-awesome-sass', '~> 5.11.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
